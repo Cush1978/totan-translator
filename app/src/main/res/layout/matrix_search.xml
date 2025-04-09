@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/totan_mosque_night"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/a_mosque_at_night"
+        android:scaleType="centerInside"
+        android:src="@drawable/mosque_night" />
+
+    <Button
+        android:id="@+id/totan_destinydie_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/ruler2"
+        android:layout_alignTop="@+id/totan_result"
+        android:background="@drawable/totan_destinydie_button"
+        android:contentDescription="@string/destiny_die"
+        android:enabled="false" />
+
+    <Spinner
+        android:id="@+id/adjective_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/matrix_selector"
+        android:layout_alignStart="@+id/matrix_selector"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/ruler2" />
+
+    <Spinner
+        android:id="@+id/matrix_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/reaction_selector"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_toStartOf="@+id/ruler2" />
+
+    <Spinner
+        android:id="@+id/reaction_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/adjective_selector"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/ruler2"
+        android:layout_toEndOf="@+id/ruler1" />
+
+    <TextView
+        android:id="@+id/totan_matrix_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/matrix_selector"
+        android:layout_alignBottom="@+id/matrix_selector"
+        android:layout_toStartOf="@+id/matrix_selector"
+        android:gravity="start|center"
+        android:text="@string/matrix"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/totan_adjective_1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/adjective_selector"
+        android:layout_alignBottom="@+id/adjective_selector"
+        android:layout_toStartOf="@+id/adjective_selector"
+        android:gravity="start|center"
+        android:text="@string/adjective"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/totan_adjective_2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/reaction_selector"
+        android:layout_alignBottom="@+id/reaction_selector"
+        android:layout_toStartOf="@+id/reaction_selector"
+        android:gravity="start|center"
+        android:text="@string/reaction"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ruler1"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/totan_reset_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_edittext"
+        android:enabled="false"
+        android:hint="@string/accessibility_unused"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/ruler2"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/totan_reset_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_edittext"
+        android:enabled="false"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/totan_reset_button"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/totan_reset_button"
+        android:contentDescription="@string/reset"
+        android:enabled="false"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txtResult_"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/totan_result"
+        android:layout_alignBottom="@+id/totan_result"
+        android:layout_toStartOf="@+id/totan_result"
+        android:gravity="start|center"
+        android:text="@string/result"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/totan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/reaction_selector"
+        android:layout_alignStart="@+id/reaction_selector"
+        android:layout_alignEnd="@+id/reaction_selector"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/ruler2"
+        android:gravity="center"
+        android:textColor="#FF7F50"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/tales_of_the_arabian_nights_title"
+        android:src="@drawable/taleslogo_transparent" />
+</RelativeLayout>

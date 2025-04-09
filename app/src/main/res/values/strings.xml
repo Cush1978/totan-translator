@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tales of the Arabian Nights Matrix Search</string>
+    <string name="matrix_prompt">Select Matrix:</string>
+    <string name="a_mosque_at_night">A mosque at night.</string>
+    <string name="tales_of_the_arabian_nights_title">Tales of the Arabian Nights</string>
+    <string name="accessibility_unused">Unused</string>
+    <string name="adjective">Adjective:</string>
+    <string name="reaction">Reaction:</string>
+    <string name="destiny_die">Destiny Die</string>
+    <string name="matrix">Matrix:</string>
+    <string name="reset">Reset</string>
+    <string name="result">Result:</string>
+    <string name="matrix_button">Matrix</string>
+    <string name="encounter_number">Encounter #</string>
+    <string name="reset_button">Reset</string>
+    <string name="line_number">Line #</string>
+    <string name="roll_die_button">Roll Die</string>
+    <string name="mosque_at_dusk">Mosque at Dusk</string>
+    <string name="tales_of_the_arabian_nights_logo">Tales of the Arabian Nights Logo</string>
+    <string name="line_label">Line:</string>
+    <string name="encounter_label">Encounter:</string>
+    <string name="pluses_label">Pluses:</string>
+    <string-array name="matrixname_array">
+        <item>None</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+    </string-array>
+</resources>
